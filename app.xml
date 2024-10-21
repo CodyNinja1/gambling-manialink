@@ -1,1 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<maniaapp>
+    <script><!--
+        #RequireContext CManiaApp
 
+        main() {  
+            declare CUILayer MyLayer;
+
+            MyLayer = UILayerCreate();
+            MyLayer.IsVisible = True; 
+            MyLayer.ManialinkPage = ManiaAppBaseUrl ^ "gamble.xml";
+
+            while (True) {
+                  foreach (Event in PendingEvents) {
+                    if (Event.Type != CManiaAppEvent::EType::LayerCustomEvent) {
+                        continue;
+                    }
+                    switch (Event.CustomEventType) {
+                        case "Square_Click": {
+                            log("The square has been clicked !");
+                        }
+                    }
+                }    
+
+                yield;
+            }
+        }
+        --></script>
+</maniaapp>
