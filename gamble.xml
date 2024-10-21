@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<manialink version="3">
+<label pos="-47.5 -4.01" z-index="0" size="94.8 34.9" text="Give me 10 planets" textsize="10" textfont="RajdhaniMono"/><label pos="-88.5 13.9" z-index="0" size="177 5" text="This manialink does nothing atm, feel free to give me planets using the button below"/><quad pos="-69.9 0.0333" z-index="0" size="140 20" bgcolor="FFFA" style="BgsButtons" substyle="BgButtonMediumSpecial" scriptevents="1" id="PlanetsButton"/>
+</manialink>
