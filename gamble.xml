@@ -8,7 +8,7 @@
             while (True) {
                 foreach (Event in PendingEvents) {
                     if (Event.Type == CMlScriptEvent::Type::MouseClick) {
-                        log("meow :3");
+                        SendCustomEvent("Square_Click", [Event.ControlId]);
                     }
                 }
 
