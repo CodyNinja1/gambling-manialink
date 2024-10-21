@@ -7,7 +7,7 @@
         main() {
             while (True) {
                 foreach (Event in PendingEvents) {
-                    if (Event.Type == CMlScriptEvent::Type::MouseClick) {
+                    if (Event.Type == CMlScriptEvent::Type::MouseClick && Event.ControlId == "PlanetsButton") {
                         SendCustomEvent("Square_Click", [Event.ControlId]);
                     }
                 }
